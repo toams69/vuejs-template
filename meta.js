@@ -28,30 +28,25 @@ module.exports = {
   
   prompts: {
     name: {
-      when: 'isNotTest',
       type: 'string',
       required: true,
       message: 'Project name',
     },
     description: {
-      when: 'isNotTest',
       type: 'string',
       required: false,
       message: 'Project description',
       default: 'A Vue.js project',
     },
     author: {
-      when: 'isNotTest',
       type: 'string',
       message: 'Author',
     },
     api: {
-      when: 'isNotTest',
       type: 'confirm',
       message: 'Create an api service?',
     },
     autoInstall: {
-      when: 'isNotTest',
       type: 'list',
       message:
         'Should we run `npm install` for you after the project has been created? (recommended)',
