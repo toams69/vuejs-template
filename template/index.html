@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>wwe-onboard</title>
+    <script src="/static/libs/soundJs/soundjs-0.6.2.min.js"></script>
+    <script type="text/javascript">  
+      window.createjs.Sound.registerSound('/static/sounds/homePage.mp3', 'HomeSound')
+      window.createjs.Sound.registerSound('/static/sounds/start.mp3', 'RunSound')
+      window.createjs.Sound.registerSound('/static/sounds/start.wav', 'StartSound')
+    </script>
+    <script type="text/javascript">
+      window.playSound = function (soundfile) {
+        document.getElementById("dummy").innerHTML= "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="dummy"></div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "runner": "terminal",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Serve",
+      "command": "npm run dev",
+      "isBackground": true,
+      "problemMatcher": {
+				"pattern": { "regexp": "_" },
+				"background": {
+          "activeOnStart": true,
+          "beginsPattern": "Started compiling",
+					"endsPattern": "Compiled successfully"
+				}
+      }
+    },
+    {
+      "type": "shell",
+      "label": "Build",
+      "command": "npm run build"
+    }
+  ]
+}
