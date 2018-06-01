@@ -57,11 +57,6 @@ module.exports = {
           short: 'npm',
         },
         {
-          name: 'Yes, use Yarn',
-          value: 'yarn',
-          short: 'yarn',
-        },
-        {
           name: 'No, I will handle that myself',
           value: false,
           short: 'no',
@@ -71,6 +66,7 @@ module.exports = {
   },
   filters: {
     'src/service/**/*': 'api',
+    '.vscode/**/*': 'api'
   },
   complete: function(data, { chalk }) {
     const green = chalk.green

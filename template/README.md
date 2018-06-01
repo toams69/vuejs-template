@@ -1,6 +1,8 @@
 {{ name }}
 {{ description }}
 
+For UI part
+
 Build Setup
 # install dependencies
 npm install
