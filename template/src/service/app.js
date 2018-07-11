@@ -9,7 +9,6 @@ const favicon = require('serve-favicon')
 const app = express()
 
 const server = require('http').Server(app)
-const io = require('socket.io')(server)
 
 app.use(bodyParser.json({limit: '10mb'}))
 app.use(bodyParser.urlencoded({extended: false, limit: '10mb'}))
