@@ -5,7 +5,7 @@ let config = {}
 
 try {
   const yamlContent = yaml.safeLoad(fs.readFileSync(path.resolve(__dirname, 'default.yml'), 'utf8'))
-  config = JSON.stringify(yamlContent, null, 2)
+  config = JSON.parse(JSON.stringify(yamlContent, null, 2))
 } catch (e) {
   console.log(e)
 }
