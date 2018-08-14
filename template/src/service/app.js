@@ -22,9 +22,9 @@ if (config.mode === 'dev') {
   const staticFolder = path.resolve(__dirname, './webapp/static')
   app.use('/static', express.static(staticFolder))
   app.get('/', function (req, res) {
-    res.sendFile(path.resolve(__dirname, '../webapp/index.html'))
+    res.sendFile(path.resolve(__dirname, './webapp/index.html'))
   })
-  app.use(favicon(path.resolve(__dirname, '../webapp/static/favicon.ico')))
+  app.use(favicon(path.resolve(__dirname, './webapp/static/favicon.ico')))
 }
 
 // Controllers
